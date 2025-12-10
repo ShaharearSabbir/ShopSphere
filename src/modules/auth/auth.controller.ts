@@ -5,7 +5,7 @@ import config from "../../config";
 
 const signUp = async (req: Request, res: Response) => {
   const { email, password } = req.body;
-  
+
   try {
     const result = await authService.signUp(email, password);
 
